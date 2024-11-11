@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./src/css/bootstrap.css">
+		<link rel="stylesheet" href="./src/css/bootstrap-icons.min.css">
+		<link rel="stylesheet" href="./src/fonts/bootstrap-icons.woff">
+		<link rel="stylesheet" href="./src/fonts/bootstrap-icons.woff2">
+		<link rel="stylesheet" href="./src/css/index.css">
+	</head>
+	<body>
+		<div class="page flex">
+			<nav class="nav flex flex-column" id="sidebar">
+				<div class="nav-header flex justify-between items-center">
+					<i class="bi bi-window-sidebar toggleBtn"></i>
+					<i class="bi bi-pencil-square" id="newBtn"></i>
+				</div>
+				<div class="nav-list">
+					<div class="list-group">
+						<h3 class="title">Today</h3>
+						<div class="list-item">Lorem ipsum dolor sit amet</div>
+						<div class="list-item">Consectetur adipiscing elit</div>
+						<div class="list-item">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+				</div>
+				<div class="nav-list">
+					<div class="list-group">
+						<h3 class="title">Yesterday</h3>
+						<div class="list-item">Lorem ipsum dolor sit amet</div>
+						<div class="list-item">Consectetur adipiscing elit</div>
+						<div class="list-item">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+				</div>
+				<div class="nav-list">
+					<div class="list-group">
+						<h3 class="title">Previous 7 Days</h3>
+						<div class="list-item">Lorem ipsum dolor sit amet</div>
+						<div class="list-item">Consectetur adipiscing elit</div>
+						<div class="list-item">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+				</div>
+			</nav>
+			<div class="main flex flex-column">
+				<div class="header flex justify-between">
+					<div class="flex column-gap items-center">
+						<i class="bi bi-window-sidebar toggleBtn hidden"></i>
+						<div class="sysName">Insights</div>
+					</div>
+					<div class="button-groups flex">
+						<button type="button" class="btn btn-outline-secondary shareButtn hidden">
+							<i class="bi bi-upload"></i>
+							Share
+						</button>
+						<div class="userImg" title="Tom">T</div>
+					</div>
+				</div>
+				<div class="content-wrapper hidden" id="contentWrapper">
+					<!-- <article>
+						<div class="user-side">
+							<div class="chat-border">Lorem ipsum dolor sit amet</div>
+						</div>
+					</article>
+					<article>
+						<div class="platform flex">
+							<div>
+								<i class="bi bi-robot"></i>
+							</div>
+							<div class="platform-container flex flex-column">
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+							</div>
+						</div>
+					</article> -->
+				</div>
+				<div class="chatbox-lg" id="chatboxLg">
+					<div class="tips">What can I help with?</div>
+					<div class="input-group input-group-lg chatbox-group">
+						<button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="bi bi-paperclip"></i>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Connect to Google Drive</a></li>
+							<li><a class="dropdown-item" href="#">Connect to Microsoft OneDrive</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item input-file-wrapper" href="#">
+								<input type="file" class="input-file"/>
+								<span>Upload from computer</span>
+							</a></li>
+						</ul>
+						<input type="text" class="form-control" id="input-full" placeholder="Typing here..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						<button class="btn btn-outline-secondary" type="button" id="submitFull">
+							<i class="bi bi-arrow-up-circle"></i>
+						</button>
+					</div>
+				</div>
+				<div class="chatbox hidden" id="chatbox">
+					<div class="input-group input-group-lg chatbox-group">
+						<button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="bi bi-paperclip"></i>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Connect to Google Drive</a></li>
+							<li><a class="dropdown-item" href="#">Connect to Microsoft OneDrive</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item input-file-wrapper" href="#">
+								<input type="file" class="input-file"/>
+								<span>Upload from computer</span>
+							</a></li>
+						</ul>
+						<input type="text" class="form-control" id="input-half" placeholder="Typing here..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						<button class="btn btn-outline-secondary" type="button" id="submitHalf">
+							<i class="bi bi-arrow-up-circle"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./src/js/bootstrap.js"></script>
+		<script src="./src/js/jquery.js"></script>
+		<script src="./src/js/index.js"></script>
+	</body>
+</html>
