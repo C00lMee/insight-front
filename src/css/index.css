@@ -207,6 +207,7 @@ margin-bottom: 3rem;
 
 .content-wrapper {
 max-width: 120rem;
+    min-width: 95rem;
 margin: 0 auto;
 }
 

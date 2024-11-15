@@ -16,7 +16,7 @@ chatboxGroup: '.chatbox-group'
 }
 
 const mockData = {
-'answer1': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+'answer1': '洞察云计算结果如下'
 }
 
 $(document).ready(function() {
@@ -72,7 +72,31 @@ $(el.contentWrapper).append(
 <i class="bi bi-robot"></i>
 </div>
 <div class="platform-container flex flex-column">
-<div>${mockData.answer1}</div>
+<div>洞察云计算结果如下</div>
+<div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>订单号</th>
+			<th>商品ID</th>
+			<th>商品数量</th>
+			<th>折扣信息</th>
+			<th>单价</th>
+			<th>实际总金额</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>ORDER002</td>
+			<td>11567504145101</td>
+			<td>14</td>
+			<td>满100减40，秒杀七折，限三份</td>
+			<td>24.9</td>
+			<td>52.29</td>
+		</tr>
+	</tbody>
+</table>
+</div>
 </div>
 </div>
 </article>`
